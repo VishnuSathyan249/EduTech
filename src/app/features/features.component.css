@@ -1,0 +1,28 @@
+
+/* Ensure the container takes full height and enables scrolling */
+.home-page-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 500vh; /* Ensures it covers the full viewport height */
+    overflow-y:auto;  /* Enables vertical scrolling */
+  }
+  
+  /* Ensure the hero section covers the full viewport height */
+  app-hero {
+    min-height: 100vh; /* Full viewport height */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative; /* Ensure it is positioned correctly */
+  }
+  
+  /* Ensure other sections stack naturally below the hero section */
+  .home-page-container > *:not(app-hero) {
+    position: relative;
+    width: 100%;
+    box-sizing: border-box; /* Include padding and borders in total width and height */
+    padding: 20px; /* Adjust padding as needed */
+    background-color: #fff; /* Background color for visibility */
+  }
+

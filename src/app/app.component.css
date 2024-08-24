@@ -1,0 +1,52 @@
+/* app-hero.component.css */
+.hero-content {
+    background-color: #f5f5f5;
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+/* Container for the home page sections */
+.home-page-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensures the container covers the viewport height */
+  overflow-y: auto;  /* Enables scrolling if content exceeds viewport height */
+}
+
+/* Ensure each section is displayed properly */
+app-front-nav, app-hero, app-features, app-about, app-testimonials,
+app-advertisement, app-services, app-curriculum, app-team, app-contact-us,
+app-cta, app-footer {
+  width: 100%;
+  box-sizing: border-box; /* Includes padding and border in element’s total width and height */
+  padding: 20px; /* Adjust as needed */
+  background-color: #fff; /* Background color for visibility */
+}
+
+/* Ensure hero section covers full viewport height */
+app-hero {
+  min-height: 100vh; /* Full viewport height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e0e0e0; /* Background color for visibility */
+}
+
+/* Optional: Customize scrollbar for better visibility */
+.home-page-container::-webkit-scrollbar {
+  width: 10px;
+}
+
+.home-page-container::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.home-page-container::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+.home-page-container::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+  
